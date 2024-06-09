@@ -24,13 +24,13 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
-  const [isLoading, setIsLoading] = useState(false);
   const {
     connectWallet,
     currentAccount,
     formData,
     sendTransaction,
     handleChange,
+    isLoading,
   } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
